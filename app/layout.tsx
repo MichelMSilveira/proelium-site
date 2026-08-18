@@ -13,16 +13,43 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Proelium Serviços",
+  metadataBase: new URL("https://proelium-site.vercel.app"),
+  title: {
+    default: "Proelium Serviços | Infraestrutura, automação e tecnologia",
+    template: "%s | Proelium Serviços",
+  },
   description:
-    "Automação residencial, infraestrutura, tecnologia, redes, segurança e soluções integradas.",
+    "Soluções integradas de automação residencial, redes, Wi‑Fi, segurança, home cinema, elétrica e infraestrutura técnica para projetos de alto padrão.",
+  keywords: [
+    "Proelium Serviços",
+    "automação residencial",
+    "infraestrutura técnica",
+    "redes Wi‑Fi",
+    "home cinema",
+    "CFTV",
+    "elétrica",
+    "tecnologia residencial",
+  ],
+  openGraph: {
+    title: "Proelium Serviços | Tecnologia integrada ao projeto",
+    description:
+      "Infraestrutura, automação, redes, segurança e soluções técnicas para residências, escritórios e obras de alto padrão.",
+    url: "https://proelium-site.vercel.app",
+    siteName: "Proelium Serviços",
+    locale: "pt_BR",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html
       lang="pt-BR"
