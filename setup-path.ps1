@@ -4,6 +4,6 @@ if ($currentPath -notlike '*nodejs*') {
     Write-Host 'Node.js adicionado ao PATH'
 }
 
-cd 'C:\Users\miche\Documents\proelium-site'
+Set-Location -Path "C:\Users\miche\Documents\proelium-site"
 & 'C:\Program Files\nodejs\node.exe' 'C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js' run dev
 
