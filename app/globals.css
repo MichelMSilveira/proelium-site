@@ -65,7 +65,7 @@ main { overflow: hidden; }
 .hero-description { max-width: 590px; margin: 34px 0 0; color: #5e5b56; font-size: 17px; line-height: 1.75; }
 .hero-actions { display: flex; gap: 14px; margin-top: 38px; flex-wrap: wrap; }
 .hero-visual { position: relative; min-height: 660px; display: flex; align-items: center; justify-content: center; }
-.hero-panel { position: relative; width: min(680px, 100%); min-height: 560px; color: white; background: linear-gradient(135deg, #445541, #233027); clip-path: polygon(17% 0, 100% 0, 100% 100%, 17% 100%, 0 50%); box-shadow: var(--soft-shadow); overflow: hidden; }
+.hero-panel { position: relative; width: min(680px, 100%); min-height: 560px; color: white; background: linear-gradient(90deg, rgba(244, 239, 232, 0.04), rgba(0, 0, 0, 0.08)), url('/images/projetos/IMG_20210927_124346.jpg') center/cover no-repeat; clip-path: polygon(17% 0, 100% 0, 100% 100%, 17% 100%, 0 50%); box-shadow: var(--soft-shadow); overflow: hidden; }
 .hero-panel::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 68% 32%, rgba(203, 100, 69, 0.22), transparent 26%), linear-gradient(135deg, transparent 0 38%, rgba(255,255,255,0.06) 38% 39%, transparent 39% 100%); }
 .hero-panel-top, .hero-panel-bottom { position: absolute; left: 18%; right: 8%; display: flex; justify-content: space-between; gap: 18px; font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 800; color: rgba(255,255,255,0.7); }
 .hero-panel-top { top: 34px; }
@@ -121,7 +121,7 @@ main { overflow: hidden; }
 
 .projects-section { border-top: 1px solid var(--line); }
 .projects-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
-.project-image { min-height: 440px; position: relative; overflow: hidden; color: white; background: linear-gradient(135deg, #39483c, #1f2923); transition: transform 0.35s ease; }
+.project-image { min-height: 440px; position: relative; overflow: hidden; color: white; background: linear-gradient(135deg, #39483c, #1f2923); background-size: cover; background-position: center; transition: transform 0.35s ease; }
 .project-image::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 75% 20%, rgba(203,100,69,0.32), transparent 28%), linear-gradient(to top, rgba(20,25,22,0.88), rgba(20,25,22,0.08)); }
 .project-card-2 .project-image { background: linear-gradient(135deg, #44372f, #22211f); }
 .project-card-3 .project-image { background: linear-gradient(135deg, #4a513d, #242a22); }
@@ -153,7 +153,7 @@ main { overflow: hidden; }
 .contact-copy { max-width: 620px; }
 .contact-copy h2 { color: white; }
 .contact-copy p:not(.section-kicker) { margin: 26px 0 34px; color: rgba(255,255,255,0.66); font-size: 16px; line-height: 1.75; }
-.contact-image { position: relative; background: radial-gradient(circle at 50% 35%, rgba(203,100,69,0.26), transparent 30%), linear-gradient(135deg, #485942, #222d26); overflow: hidden; }
+.contact-image { position: relative; background: linear-gradient(rgba(38, 40, 40, 0.05), rgba(38, 40, 40, 0.16)), url('/images/servicos/automacao/20210211_135605.jpg') center/cover no-repeat; overflow: hidden; }
 .contact-image::before { content: ''; position: absolute; inset: 9%; border: 1px solid rgba(230,223,214,0.18); transform: rotate(8deg); }
 .contact-image::after { content: ''; position: absolute; width: 420px; height: 420px; border: 1px solid rgba(203,100,69,0.55); border-radius: 42% 58% 52% 48%; left: 12%; top: 22%; transform: rotate(22deg); }
 .contact-brand-card { position: absolute; right: 48px; bottom: 48px; display: flex; align-items: center; gap: 18px; padding: 22px 24px; background: rgba(38,40,40,0.68); backdrop-filter: blur(16px); z-index: 2; }

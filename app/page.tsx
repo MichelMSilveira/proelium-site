@@ -74,21 +74,25 @@ const projects = [
     title: "Residência conectada",
     category: "AUTOMAÇÃO",
     description: "Controle integrado de iluminação, climatização, cenas e segurança.",
+    image: "/images/projetos/IMG_20210927_124346.jpg",
   },
   {
     title: "Cinema residencial",
     category: "ÁUDIO E VÍDEO",
     description: "Experiência imersiva com áudio, imagem, acústica e operação simples.",
+    image: "/images/servicos/cinema/IMG_20210721_120652.jpg",
   },
   {
     title: "Rede de alta cobertura",
     category: "REDES",
     description: "Wi‑Fi estável, cabeamento estruturado e rack organizado.",
+    image: "/images/servicos/automacao/20210211_135605.jpg",
   },
   {
     title: "Infraestrutura de obra",
     category: "EXECUÇÃO",
     description: "Base técnica planejada antes do acabamento para evitar retrabalho.",
+    image: "/images/servicos/infraestrutura/IMG_20210430_111614.jpg",
   },
 ];
 
@@ -304,7 +308,16 @@ export default function Home() {
           <div className="projects-grid">
             {projects.map((project, index) => (
               <article className={`project-card project-card-${index + 1}`} key={project.title}>
-                <div className="project-image">
+                <div
+                  className="project-image"
+                  style={{
+                    backgroundImage: `linear-gradient(
+                      to top,
+                      rgba(20, 25, 22, 0.72),
+                      rgba(20, 25, 22, 0.05)
+                    ), url("${project.image}")`,
+                  }}
+                >
                   <div className="project-mark"><BrandSymbol /></div>
                   <div className="project-info">
                     <span>{project.category}</span>
