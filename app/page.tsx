@@ -1,4 +1,4 @@
-const solutions = [
+﻿const solutions = [
   {
     number: "01",
     title: "Automação Residencial",
@@ -101,34 +101,32 @@ const steps = [
 
 const projects = [
   {
-    title: "Residência Integrada",
-    category: "AUTOMAÇÃO",
-    image: "/images/projetos/IMG_20210927_124346.jpg",
+    tag: 'AUTOMAÇÃO',
+    title: 'Residência Integrada',
+    description:
+      'Infraestrutura, automação e integração técnica aplicadas em uma residência real.',
+    image: '/images/projetos/IMG_20210927_124346.jpg',
   },
   {
-    title: "Cinema Residencial",
-    category: "ÁUDIO E VÍDEO",
-    image: "/images/projetos/IMG_20210721_120652.jpg",
+    tag: 'ÁUDIO E VÍDEO',
+    title: 'Cinema Residencial',
+    description:
+      'Ambiente preparado para áudio, vídeo e experiência imersiva com acabamento técnico.',
+    image: '/images/servicos/cinema/IMG_20210721_120652.jpg',
   },
   {
-    title: "Ambientes Inteligentes",
-    category: "INTEGRAÇÃO",
-    image: "/images/projetos/20210211_135605.jpg",
+    tag: 'INTEGRAÇÃO',
+    title: 'Automação de Ambientes',
+    description:
+      'Controle, cenas e integração entre sistemas para simplificar o uso dos espaços.',
+    image: '/images/servicos/automacao/20210211_135605.jpg',
   },
   {
-    title: "Infraestrutura Técnica",
-    category: "REDES E TECNOLOGIA",
-    image: "/images/projetos/IMG_20210430_111614.jpg",
-  },
-  {
-    title: "Gestão de Obras",
-    category: "EXECUÇÃO",
-    image: "/images/projetos/gestao-obras.jpg",
-  },
-  {
-    title: "Segurança Residencial",
-    category: "SEGURANÇA",
-    image: "/images/projetos/seguranca.jpg",
+    tag: 'INFRAESTRUTURA',
+    title: 'Infraestrutura Técnica',
+    description:
+      'Cabeamento, organização, rede e base técnica para sistemas estáveis e confiáveis.',
+    image: '/images/servicos/infraestrutura/IMG_20210430_111614.jpg',
   },
 ];
 
@@ -359,20 +357,21 @@ export default function Home() {
             {projects.map((project) => (
               <article className="project-card" key={project.title}>
                 <div
-                  className="project-image"
-                  style={{
-                    backgroundImage: `linear-gradient(
-                      to top,
-                      rgba(20, 25, 22, 0.72),
-                      rgba(20, 25, 22, 0.05)
-                    ), url("${project.image}")`,
-                  }}
-                >
-                  <div className="project-info">
-                    <span>{project.category}</span>
-                    <h3>{project.title}</h3>
-                  </div>
-                </div>
+  className="project-image"
+  style={{
+    backgroundImage: `linear-gradient(
+      to top,
+      rgba(20, 25, 22, 0.72),
+      rgba(20, 25, 22, 0.05)
+    ), url("${project.image}")`,
+  }}
+>
+  <div className="project-info">
+    <span>{project.tag}</span>
+    <h3>{project.title}</h3>
+    <p>{project.description}</p>
+  </div>
+</div>
               </article>
             ))}
           </div>
