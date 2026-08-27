@@ -151,29 +151,34 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <div className="container header-inner">
-          <a href="#inicio" className="brand" aria-label="Proelium Serviços">
-            <BrandSymbol />
+      <div className="container header-inner">
+        <a href="#inicio" className="brand" aria-label="Proelium Serviços">
+          <BrandSymbol />
 
-            <div className="brand-text">
-              <strong>PROELIUM</strong>
-              <span>SERVIÇOS</span>
-            </div>
-          </a>
+          <div className="brand-text">
+            <strong>PROELIUM</strong>
+            <span>SERVIÇOS</span>
+          </div>
+        </a>
 
-          <nav className="desktop-nav" aria-label="Navegação principal">
-            <a href="#solucoes">Soluções</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#metodo">Método</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#contato">Contato</a>
-          </nav>
+        <nav className="desktop-nav" aria-label="Navegação principal">
+          <a href="#solucoes">Soluções</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#metodo">Método</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#contato">Contato</a>
+        </nav>
 
-          <a href="#contato" className="button button-primary header-cta">
-            Falar com a Proelium
-          </a>
-        </div>
-      </header>
+        <a
+          href="https://www.instagram.com/proeliumservicos/"
+          target="_blank"
+          rel="noreferrer"
+          className="button button-primary header-cta"
+        >
+          Falar com a Proelium
+        </a>
+      </div>
+    </header>
 
       <section id="inicio" className="hero">
         <div className="container hero-grid">
@@ -424,7 +429,7 @@ export default function Home() {
             </p>
 
             <a
-              href="https://wa.me/"
+              href="https://www.instagram.com/proeliumservicos/"
               target="_blank"
               rel="noreferrer"
               className="button button-accent"
