@@ -1240,3 +1240,72 @@ main {
     flex-direction: column;
   }
 }
+.hero-visual {
+  position: relative !important;
+  min-height: 560px !important;
+  border-radius: 36px !important;
+  overflow: hidden !important;
+}
+
+.hero-image {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 1 !important;
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 36px !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  animation: heroSlideshow 18s infinite ease-in-out;
+}
+
+.hero-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(
+    to top,
+    rgba(20, 25, 22, 0.72),
+    rgba(20, 25, 22, 0.12)
+  );
+  pointer-events: none;
+}
+
+@keyframes heroSlideshow {
+  0%,
+  20% {
+    background-image: url("/images/projetos/IMG_20210927_124346.jpg");
+  }
+
+  25%,
+  45% {
+    background-image: url("/images/servicos/cinema/IMG_20210721_120652.jpg");
+  }
+
+  50%,
+  70% {
+    background-image: url("/images/servicos/automacao/20210211_135605.jpg");
+  }
+
+  75%,
+  95% {
+    background-image: url("/images/servicos/infraestrutura/IMG_20210430_111614.jpg");
+  }
+
+  100% {
+    background-image: url("/images/projetos/IMG_20210927_124346.jpg");
+  }
+}
+
+.hero-line {
+  position: absolute !important;
+  z-index: 3 !important;
+}
+
+.hero-badge {
+  position: absolute !important;
+  z-index: 4 !important;
+}
