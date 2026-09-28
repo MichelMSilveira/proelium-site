@@ -4,7 +4,7 @@
 Site institucional em Next.js, com documentacao de deploy existente em `docs/DEPLOYMENT.md`.
 
 ## Estrutura de contexto
-- `AGENTS.md` existente com regras do Next.js;
+- `AGENTS.md` contém o bloco gerado do Next.js e regras locais de conteúdo e publicação;
 - `PROJECT.md` criado para identidade, escopo e limites;
 - este arquivo passa a ser o ponto principal de retomada.
 
@@ -16,5 +16,5 @@ Auditar o estado atual da home e registrar:
 - backlog visual e tecnico.
 
 ## Pendencias
-- criar `docs/SESSION.md` na proxima sessao de desenvolvimento;
-- revisar o README padrao do create-next-app e substituir por documentacao real do projeto quando conveniente.
+- criar `docs/SESSION.md` apenas se houver passagem de turno útil;
+- o README já descreve o projeto; manter execução e deploy alinhados à configuração real.
